@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #1b1b1b;
+  background: #f8f5ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Poppins", sans-serif;
+  background: #f8f5ef;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid rgba(201, 170, 115, 0.22);
+  box-shadow: 0 18px 60px rgba(27, 27, 27, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.product-frame img {
+  transition: transform 500ms ease;
+}
+
+.product-frame:hover img {
+  transform: scale(1.06);
+}
